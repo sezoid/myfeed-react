@@ -73,7 +73,8 @@ html, body {
 	padding: 0 32px;
 	position: fixed;
 	right: 0;
-	width: 100%
+	width: 100%;
+	z-index: 1
 }
 .Footer nav {
 	margin: 0 -19px;
@@ -84,7 +85,7 @@ html, body {
 	cursor: pointer;
 	font-size: 14px;
 	margin: 0 1px;
-	padding: 20px 10px 18px 10px;
+	padding: 20px 10px 17px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: border-bottom-color 0.25s, color 0.25s

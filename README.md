@@ -3,6 +3,7 @@ A simple RSS reader for my favorite sites.
 
 My feed:
 * 4pda.ru
+* meduza.io
 * miped.ru
 * reactjs.org/blog
 * blog.ubuntu.com

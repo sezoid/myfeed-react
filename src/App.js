@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Titlebar from './components/Titlebar';
 
 import Fourpda from './feeds/Fourpda';
+import Meduza from './feeds/Meduza';
 import Miped from './feeds/Miped';
 import ReactBlog from './feeds/ReactBlog';
 import Toster from './feeds/Toster';
@@ -30,6 +31,7 @@ class App extends React.Component {
 						<Switch>
 							<Route component={this.state.initFeed} exact path={'/'} />
 							<Route component={Fourpda} path='/4pda' />
+							<Route component={Meduza} path='/meduza' />
 							<Route component={Miped} path='/miped' />
 							<Route component={ReactBlog} path='/react' />
 							<Route component={Ubuntu} path='/ubuntu' />
