@@ -34,6 +34,7 @@ class App extends React.Component {
 							<Route component={Meduza} path='/meduza' />
 							<Route component={Miped} path='/miped' />
 							<Route component={ReactBlog} path='/react' />
+							<Route component={Toster} path='/toster' />
 							<Route component={Ubuntu} path='/ubuntu' />
 							<Redirect to='/' />
 						</Switch>
