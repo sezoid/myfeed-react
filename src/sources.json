@@ -1,0 +1,21 @@
+[{
+	"key": 0,
+	"link": "https://reactjs.org/feed.xml",
+	"path": "/react",
+	"title": "React"
+}, {
+	"key": 1,
+	"link": "https://overreacted.io/rss.xml",
+	"path": "/overreacted",
+	"title": "Overreacted"
+}, {
+	"key": 2,
+	"link": "http://firebase.googleblog.com/feeds/posts/default",
+	"path": "/firebase",
+	"title": "Firebase"
+}, {
+	"key": 3,
+	"link": "https://meduza.io/rss/all",
+	"path": "/meduza",
+	"title": "Meduza"
+}]

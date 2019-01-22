@@ -1,0 +1,12 @@
+{
+  "name": "@myfeed-react/components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Roman Sultanov (SZ)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  }
+}

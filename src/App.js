@@ -1,50 +1,42 @@
-import React from 'react';
-import {Redirect, Route, Switch} from 'react-router';
-import {BrowserRouter} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Redirect, Route, Switch } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 
-import Footer from './components/Footer';
-import Titlebar from './components/Titlebar';
+// Components
+import { Header, Navigation, Way } from '@myfeed-react/components';
 
-import Fourpda from './feeds/Fourpda';
-import Meduza from './feeds/Meduza';
-import Miped from './feeds/Miped';
-import ReactBlog from './feeds/ReactBlog';
-import Toster from './feeds/Toster';
-import Ubuntu from './feeds/Ubuntu';
+// List of my RSS-feeds
+import sources from './sources.json';
 
-import './App.css';
+export default class App extends Component {
+  state = {
+    initTab: React,
+    sources: sources
+  };
 
-class App extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			initFeed: Toster
-		};
-	};
+  render() {
+    const { sources } = this.state;
 
-	render() {
-		return (
-			<BrowserRouter>
-				<div className='App' ref='app'>
-					<Titlebar value='Моя лента' />
-					<div className='wrapper'>
-						<Switch>
-							<Route component={this.state.initFeed} exact path={'/'} />
-							<Route component={Fourpda} path='/4pda' />
-							<Route component={Meduza} path='/meduza' />
-							<Route component={Miped} path='/miped' />
-							<Route component={ReactBlog} path='/react' />
-							<Route component={Toster} path='/toster' />
-							<Route component={Ubuntu} path='/ubuntu' />
-							<Redirect to='/' />
-						</Switch>
-					</div>
-					<Footer />
-				</div>
-			</BrowserRouter>
-		);
-	};
+    return (
+      <BrowserRouter>
+        <div className='App'>
+          <Header value='My Feed' />
+          <main>
+            <Switch>
+              <Route exact path='/' render={() =>
+                <Redirect to={sources[0].path} />
+              } />
+              {sources.map(route => (
+                <Way key={ route.key } link={ route.link } path={ route.path } />
+              ))}
+              <Redirect to='/' />
+            </Switch>
+          </main>
+          <Navigation links={ sources } />
+        </div>
+      </BrowserRouter>
+    );
+  };
 }
 
 App.displayName = 'App';
-export default App;
