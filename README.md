@@ -2,18 +2,16 @@
 A simple RSS reader for my favorite sites.
 
 My feed:
-* 4pda.ru
-* meduza.io
-* miped.ru
 * reactjs.org/blog
-* blog.ubuntu.com
-* toster.ru
+* overreacted.io
+* firebase.googleblog.com
+* meduza.io
 
 ### How to build
 ```
 $ git clone https://github.com/sezoid/myfeed-react.git
 $ cd myfeed-react
-$ yarn install
+$ yarn
 $ yarn build
 ```
 

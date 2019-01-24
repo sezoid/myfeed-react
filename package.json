@@ -17,7 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "yarn build && firebase deploy",
-    "postinstall": "cd \"src/components\" && yarn"
+    "postinstall": "cd src/components && yarn"
   },
   "eslintConfig": {
     "extends": "react-app"

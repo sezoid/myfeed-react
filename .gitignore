@@ -2,11 +2,13 @@
 
 # dependencies
 /node_modules
+/src/components/node_modules
 
 # testing
 /coverage
 
 # production
+/.firebase
 /build
 
 # misc
