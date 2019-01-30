@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Item = ({ date, link, title }) => {
+const Item = ({ date, description, link, showDesc, title }) => {
   let articleDate = new Date(date);
-  articleDate = `${articleDate.getMonth()+1}/${articleDate.getDate()}/${articleDate.getFullYear()}`
+  articleDate = `${ articleDate.getMonth()+1 } / ${ articleDate.getDate() } / ${ articleDate.getFullYear() }`
 
   return (
     <li className='item'>
@@ -11,9 +12,22 @@ const Item = ({ date, link, title }) => {
           { title }
         </a>
       </span>
-      {date !== 'null' && <span className='date'>{ articleDate }</span>}
+      { showDesc && description !== null &&
+        <span className='description' dangerouslySetInnerHTML={{ __html: description }} />
+      }
+      { date !== 'null' &&
+        <span className='date'>{ articleDate }</span>
+      }
     </li>
   );
+};
+
+Item.propTypes = {
+  date: PropTypes.string,
+  description: PropTypes.string,
+  link: PropTypes.string.isRequired,
+  showDesc: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 Item.displayName = 'Item';

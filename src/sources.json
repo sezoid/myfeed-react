@@ -2,20 +2,24 @@
 	"key": 0,
 	"link": "https://reactjs.org/feed.xml",
 	"path": "/react",
+	"showDesc": false,
 	"title": "React"
 }, {
 	"key": 1,
 	"link": "https://overreacted.io/rss.xml",
 	"path": "/overreacted",
+	"showDesc": true,
 	"title": "Overreacted"
 }, {
 	"key": 2,
 	"link": "http://firebase.googleblog.com/feeds/posts/default",
 	"path": "/firebase",
+	"showDesc": false,
 	"title": "Firebase"
 }, {
 	"key": 3,
 	"link": "https://meduza.io/rss/all",
 	"path": "/meduza",
+	"showDesc": true,
 	"title": "Meduza"
 }]

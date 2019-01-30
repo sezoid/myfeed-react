@@ -27,7 +27,7 @@ export default class App extends Component {
                 <Redirect to={sources[0].path} />
               } />
               {sources.map(route => (
-                <Way key={ route.key } link={ route.link } path={ route.path } />
+                <Way key={ route.key } link={ route.link } showDesc={ route.showDesc } path={ route.path } />
               ))}
               <Redirect to='/' />
             </Switch>
