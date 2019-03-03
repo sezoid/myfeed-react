@@ -6,9 +6,7 @@ import PropTypes from 'prop-types';
 import { Feed } from '../index';
 
 const Way = ({ link, showDesc, path }) => (
-  <Route path={ path } render={() =>
-    <Feed link={ link } showDesc={ showDesc } />
-  } />
+  <Route path={path} render={() => <Feed link={link} showDesc={showDesc} />} />
 );
 
 Way.propTypes = {

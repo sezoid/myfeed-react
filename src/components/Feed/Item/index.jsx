@@ -8,16 +8,17 @@ const Item = ({ date, description, link, showDesc, title }) => {
   return (
     <li className='item'>
       <span className='title'>
-        <a href={ link } rel='noopener noreferrer' target='_blank'>
-          { title }
+        <a href={link} rel='noopener noreferrer' target='_blank'>
+          {title}
         </a>
       </span>
-      { showDesc && description !== null &&
-        <span className='description' dangerouslySetInnerHTML={{ __html: description }} />
-      }
-      { date !== 'null' &&
-        <span className='date'>{ articleDate }</span>
-      }
+      {showDesc && description !== null && (
+        <span
+          className='description'
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
+      {date !== 'null' && <span className='date'>{articleDate}</span>}
     </li>
   );
 };

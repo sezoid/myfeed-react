@@ -9,8 +9,8 @@ const Navigation = ({ links }) => (
   <footer className='Navigation'>
     <nav>
       {links.map(item => (
-        <NavLink activeClassName='active' key={ item.key } to={ item.path } exact>
-          { item.title }
+        <NavLink activeClassName='active' key={item.key} to={item.path} exact>
+          {item.title}
         </NavLink>
       ))}
     </nav>

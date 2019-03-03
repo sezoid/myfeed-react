@@ -23,20 +23,27 @@ export default class App extends Component {
           <Header value='My Feed' />
           <main>
             <Switch>
-              <Route exact path='/' render={() =>
-                <Redirect to={sources[0].path} />
-              } />
+              <Route
+                exact
+                path='/'
+                render={() => <Redirect to={sources[0].path} />}
+              />
               {sources.map(route => (
-                <Way key={ route.key } link={ route.link } showDesc={ route.showDesc } path={ route.path } />
+                <Way
+                  key={route.key}
+                  link={route.link}
+                  showDesc={route.showDesc}
+                  path={route.path}
+                />
               ))}
               <Redirect to='/' />
             </Switch>
           </main>
-          <Navigation links={ sources } />
+          <Navigation links={sources} />
         </div>
       </BrowserRouter>
     );
-  };
+  }
 }
 
 App.displayName = 'App';
