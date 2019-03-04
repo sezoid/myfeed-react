@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Item = ({ date, description, link, showDesc, title }) => {
   let articleDate = new Date(date);
-  articleDate = `${ articleDate.getMonth()+1 } / ${ articleDate.getDate() } / ${ articleDate.getFullYear() }`
+  articleDate = `${ articleDate.getMonth()+1 }/${ articleDate.getDate() }/${ articleDate.getFullYear() }`
 
   return (
     <li className='item'>
