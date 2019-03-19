@@ -18,8 +18,8 @@
 	"title": "Firebase"
 }, {
 	"key": 3,
-	"link": "https://meduza.io/rss/all",
-	"path": "/meduza",
+	"link": "https://libraries.io/home.atom?api_key=b22134d3479bb1a811d304b55bf0eeea",
+	"path": "/libraries",
 	"showDesc": true,
-	"title": "Meduza"
+	"title": "Libraries.io"
 }]
